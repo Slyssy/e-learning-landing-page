@@ -1,0 +1,67 @@
+:root {
+  --blue-gray: #666ca3;
+  --black: #13183f;
+  --gray: #83869a;
+  --magenta: #f74780;
+  --pink: #ffa7c3;
+  --white: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+#page-container {
+  padding: 1.5em 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.heading-1 {
+  grid-column: span 2;
+}
+
+p {
+  grid-column: span 2;
+}
+
+.hero-image-container {
+  grid-column: span 2;
+  width: 100%;
+}
+
+.hero-image-container img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.lesson-section {
+  grid-column: span 2;
+}
+.subheader {
+  grid-column: span 2;
+}
+
+.lessons-heading {
+  grid-column: 1;
+}
+
+.get-started {
+  color: var(--magenta);
+}
+
+footer {
+  grid-column: span 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
