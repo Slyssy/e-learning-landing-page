@@ -21,27 +21,41 @@
     <title>Skilled E-learning Landing Page</title>
   </head>
   <body>
-    <div id="page-container">
-      <h2>skilled</h2>
-      <button class="button1">Get Started</button>
+    <div id="landing-page-container">
+      <h2 class="top-subheading">skilled</h2>
+      <button class="button-1">Get Started</button>
       <h1 class="heading-1">Maximize skill, minimize budget</h1>
-      <p>
+      <p class="paragraph-1">
         Our modern courses across a range of in-demand skills will give you the
         knowledge you need to live the life you want.
       </p>
-      <button class="button2">Get Started</button>
+      <button class="button-2">Get Started</button>
       <div class="hero-image-container">
-        <img
-          src="./assets/image-hero-mobile@2x.png"
-          alt="Woman blowing on
+        <picture class="hero-images">
+          <source
+            media="(min-width: 768px"
+            srcset="./assets/image-hero-tablet.png"
+            class="tablet-image"
+          />
+          <source
+            media="(min-width: 992px"
+            srcset="./assets/image-hero-desktop.png"
+          />
+          <img
+            class="hero-image"
+            src="./assets/image-hero-mobile@2x.png"
+            alt="Woman blowing on
         coffee to cool it down with course members and course hours statistics."
-        />
+          />
+        </picture>
       </div>
+    </div>
+    <section id="lessons-container">
       <div class="subheader">
         <h2>Check out our most popular courses</h2>
       </div>
-      <section class="lesson-section animation">
-        <div class="icon-container">
+      <article class="lesson-section animation">
+        <div class="icon-container animation">
           <img src="./assets/icon-animation.svg" alt="Running man icon." />
         </div>
         <h3 class="lessons-heading">Animation</h3>
@@ -50,8 +64,8 @@
           and captivate your audience.
         </p>
         <a href="#" class="get-started"><h4>Get Started</h4></a>
-      </section>
-      <section class="lesson-section design">
+      </article>
+      <article class="lesson-section design">
         <div class="icon-container">
           <img src="./assets/icon-design.svg" alt="Design Icon" />
         </div>
@@ -61,8 +75,8 @@
           the web looks.
         </p>
         <a href="#" class="get-started"><h4>Get Started</h4></a>
-      </section>
-      <section class="lesson-section photography">
+      </article>
+      <article class="lesson-section photography">
         <div class="icon-container">
           <img src="./assets/icon-photography.svg" alt="Design Icon" />
         </div>
@@ -72,8 +86,8 @@
           capture exceptional photos.
         </p>
         <a href="#" class="get-started"><h4>Get Started</h4></a>
-      </section>
-      <section class="lesson-section crypto">
+      </article>
+      <article class="lesson-section crypto">
         <div class="icon-container">
           <img src="./assets/icon-crypto.svg" alt="Design Icon" />
         </div>
@@ -83,8 +97,8 @@
           beginner to advanced with this 54 hour course.
         </p>
         <a href="#" class="get-started"><h4>Get Started</h4></a>
-      </section>
-      <section class="lesson-section business">
+      </article>
+      <article class="lesson-section business">
         <div class="icon-container">
           <img src="./assets/icon-business.svg" alt="Design Icon" />
         </div>
@@ -94,11 +108,11 @@
           business without outside investment.
         </p>
         <a href="#" class="get-started"><h4>Get Started</h4></a>
-      </section>
-      <footer>
-        <h2>skilled</h2>
-        <button>Get Started</button>
-      </footer>
-    </div>
+      </article>
+    </section>
+    <footer>
+      <h2>skilled</h2>
+      <button class="button-3 gradient">Get Started</button>
+    </footer>
   </body>
 </html>
